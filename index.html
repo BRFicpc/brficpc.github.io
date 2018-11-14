@@ -1,0 +1,24 @@
+---
+layout: default
+title: Blog
+---
+
+<p>
+Description: Banana banana banana.
+</p>
+
+<h2>Latest Posts</h2>
+
+<ul>
+  {% for post in site.posts %}
+    <div class="post-entry">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+      <div class="post-view-more">
+        <a href="{{ post.url }}">View more...</a>
+      </div>
+    </div>
+  {% endfor %}
+</ul>
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

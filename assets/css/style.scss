@@ -1,0 +1,44 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header .title a {
+  color: #606060;
+}
+
+header .logo {
+  margin-bottom: 1em;
+}
+
+.post-entry {
+  margin-bottom: 1em;
+}
+
+.post-entry .post-view-more {
+  font-size: 80%;
+}
+
+.navigation {
+  display: flex;
+}
+
+.navigation .nav-back {
+  flex-basis: content;
+}
+
+.navigation .nav-fill {
+  flex-grow: 1;
+}
+
+.navigation .nav-fw {
+  flex-basis: content;
+}
+
+.navigation a {
+  color: gray;
+}
+
+.navigation a:hover {
+  color: gray;
+}

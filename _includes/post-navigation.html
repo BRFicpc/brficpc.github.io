@@ -1,0 +1,21 @@
+<div>
+  <div class="navigation">
+    <div class="nav-back">
+      {% if page.previous %}
+        <a href="{{ page.previous.url }}">
+          Previous
+        </a>
+      {% else %}
+        &nbsp;
+      {% endif %}
+    </div>
+    <div class="nav-fill"></div>
+    <div class="nav-fw">
+      {% if page.next %}
+        <a href="{{ page.next.url }}">
+          Next
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</div>
